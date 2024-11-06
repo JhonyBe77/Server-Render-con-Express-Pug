@@ -1,0 +1,164 @@
+body {
+  width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #4d4dff;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+fieldset {
+  display: block;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-before: 0em;
+  -webkit-padding-start: 0em;
+  -webkit-padding-end: 0em;
+  -webkit-padding-after: 0em;
+  border: 0px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  min-width: -webkit-min-content;
+  padding: 150px;
+}
+
+.ghost-input,
+p {
+  display: block;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  border: 0px;
+  outline: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #4d4dff;
+  background: hwb(0 100% 0%);
+  font-family: Open Sans, Verdana;
+  padding: 10px 15px;
+  margin: 30px 0px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.ghost-input:focus {
+  border-bottom: 1px solid #ddd;
+}
+
+.ghost-button {
+  background-color: #ff0571;
+  border: 2px solid #ff0571;
+  padding: 10px 30px;
+  width: 100%;
+  min-width: 350px;
+  color: white; 
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.ghost-button:hover {
+  background-color: #ff057170;
+  border: 2px solid #f661a2;
+}
+
+p {
+  color: #ff0571;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: row;  /* Cambia a fila para colocar la imagen a la derecha */
+  align-items: flex-start;  /* Alinea los elementos al principio (arriba) */
+  justify-content: flex-start; /* Alinea los elementos al inicio */
+  width: 80%;        /* Se ajusta el ancho al 80% del contenedor */
+  max-width: 500px;  /* Limita el tamaño máximo de la tarjeta */
+  padding: 20px;
+  background-color: #ff0571;
+  font-family: 'Open Sans', sans-serif;
+  transition: transform 0.2s ease;
+  margin: 100px auto 0;  /* Centra horizontalmente usando auto, y mantiene margen superior */
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.poster {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  margin-top: 60px;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.movie-title {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0;
+  color: #fdfdfc;
+}
+
+.movie-year,
+.movie-genre,
+.movie-director,
+.movie-plot {
+  font-size: 14px;
+  color: #4d4dff;
+  margin: 6px 0;
+}
+
+button {
+  background-color: #c2ff05;
+  color: #ff0571;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c2ff056e;
+}
+
+/* Estilos específicos para el botón "Volver a buscar otra película" */
+.return-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #ff0571;
+  background-color: #c2ff05;
+  border: none;
+  cursor: pointer;
+  text-decoration: none; /* Para que el enlace no tenga subrayado */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.return-button:hover {
+  background-color: #c2ff056e;
+}
+
+.return-button:active {
+  background-color: #c2ff05bb;
+}
