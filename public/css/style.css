@@ -2,7 +2,11 @@ body {
   width: 800px;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
-  background-color: #4d4dff;
+  background-image: url('../img/patron.jpg');
+  background-size: cover; /* O puedes probar con 'contain' */
+  background-repeat: repeat; /* Ajusta según tus necesidades */
+  background-size: 200px 200px; /* Ajusta el tamaño de la imagen de fondo */
+  background-position: top left;
 }
 
 .container {
@@ -41,8 +45,8 @@ p {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  color: #4d4dff;
-  background: hwb(0 100% 0%);
+  color: #45a29b;
+  background: #ededed;
   font-family: Open Sans, Verdana;
   padding: 10px 15px;
   margin: 30px 0px;
@@ -58,12 +62,12 @@ p {
 }
 
 .ghost-button {
-  background-color: #ff0571;
-  border: 2px solid #ff0571;
+  background-color: #212121;
+  border: 2px solid #f9f9f9;
   padding: 10px 30px;
   width: 100%;
   min-width: 350px;
-  color: white; 
+  color: #66fcf1; 
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
   -ms-transition: all 0.1s ease-in-out;
@@ -72,26 +76,36 @@ p {
 }
 
 .ghost-button:hover {
-  background-color: #ff057170;
-  border: 2px solid #f661a2;
+  color: #212121; 
+  background-color: #66fcf1;
+  border: 2px solid #f9f9f9;
+}
+
+h1{
+  color: #66fcf1;
+  text-shadow: 
+    2px 2px 0 black,  
+    -2px 2px 0 black, 
+    2px -2px 0 black, 
+    -2px -2px 0 black; 
 }
 
 p {
-  color: #ff0571;
+  color: #1f2833;
 }
 
 .movie-card {
   display: flex;
-  flex-direction: row;  /* Cambia a fila para colocar la imagen a la derecha */
-  align-items: flex-start;  /* Alinea los elementos al principio (arriba) */
-  justify-content: flex-start; /* Alinea los elementos al inicio */
-  width: 80%;        /* Se ajusta el ancho al 80% del contenedor */
-  max-width: 500px;  /* Limita el tamaño máximo de la tarjeta */
+  flex-direction: row;  
+  align-items: flex-start;  
+  justify-content: flex-start; 
+  width: 80%;        
+  max-width: 500px;  
   padding: 20px;
-  background-color: #ff0571;
+  background-color: #f9f9f9;
   font-family: 'Open Sans', sans-serif;
   transition: transform 0.2s ease;
-  margin: 100px auto 0;  /* Centra horizontalmente usando auto, y mantiene margen superior */
+  margin: 100px auto 0;  
 }
 
 .movie-card:hover {
@@ -117,7 +131,7 @@ p {
   font-size: 35px;
   font-weight: 600;
   margin: 0;
-  color: #fdfdfc;
+  color: #212121;
 }
 
 .movie-year,
@@ -125,13 +139,13 @@ p {
 .movie-director,
 .movie-plot {
   font-size: 14px;
-  color: #4d4dff;
+  color: #212121;
   margin: 6px 0;
 }
 
 button {
-  background-color: #c2ff05;
-  color: #ff0571;
+  background-color: #212121;
+  color: #f9f9f9;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -139,7 +153,8 @@ button {
 }
 
 button:hover {
-  background-color: #c2ff056e;
+  background-color: #66fcf1;
+  color: #212121;
 }
 
 /* Estilos específicos para el botón "Volver a buscar otra película" */
@@ -147,18 +162,20 @@ button:hover {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
-  color: #ff0571;
-  background-color: #c2ff05;
+  color: #212121;
+  background-color: #f9f9f9;
   border: none;
   cursor: pointer;
-  text-decoration: none; /* Para que el enlace no tenga subrayado */
+  text-decoration: none; 
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .return-button:hover {
-  background-color: #c2ff056e;
+  color: #212121;
+  background-color: #66fcf1;
 }
-
+ 
 .return-button:active {
-  background-color: #c2ff05bb;
+  color: #212121;
+  background-color: #45a29b;
 }
